@@ -37,7 +37,7 @@ version: '3.8'
 services:
   zabbix-server:
     container_name: "zabbix-server"
-    image: zabbix/zabbix-server-pgsql:ubuntu-7.0-latest
+    image: zabbix/zabbix-server-pgsql:ubuntu-7.2-latest
     restart: always
     ports:
       - 10051:10051
@@ -57,7 +57,7 @@ services:
 
   zabbix-web-nginx-pgsql:
     container_name: "zabbix-web"
-    image: zabbix/zabbix-web-nginx-pgsql:ubuntu-7.0-latest
+    image: zabbix/zabbix-web-nginx-pgsql:ubuntu-7.2-latest
     restart: always
     ports:
       - 8080:8080
@@ -76,7 +76,7 @@ services:
 
   zabbix-agent2:
     container_name: "zabbix-agent2"
-    image: zabbix/zabbix-agent2:ubuntu-7.0-latest
+    image: zabbix/zabbix-agent2:ubuntu-7.2-latest
     restart: always
     ports:
       - 10050:10050
