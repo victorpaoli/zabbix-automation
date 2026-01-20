@@ -122,3 +122,8 @@ sudo docker ps
 
 # Instrução para logs
 echo "Para ver os logs de um container, use: sudo docker logs <nome_do_container>"
+
+echo
+echo "[OK] Zabbix iniciado com sucesso!"
+echo "Acesse: http://<IP_DA_VM>:8080"
+echo "Login padrão: Admin / zabbix"
